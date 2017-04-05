@@ -52,3 +52,26 @@ def hello():
   print "hello"
 
 hello() # start, hello, end
+
+# 可変長引数
+# 可変長引数の指定、つまり、引数の数を変えることができる
+# 何個でも指定できる関数で、「*args」のように変数名の前にアスタリスク(*)を書きます。
+
+def sumArgs(*args):
+  v = 0
+  for n in args:
+    v += n
+  return v
+
+print(sumArgs(1,2,3)) # 6
+print(sumArgs(1, 2, 3, 4, 5)) # 15
+
+# 辞書型の可変長引数
+# 可変長引数を辞書型にマッピングすることができる。
+# 「**args」のようにアスタリスク２つを変数名の前に付けます。
+def print_args(**args):
+  print args
+
+print_args(a=10, b=20, c=40) # ("a": 10, "c": 40, "b": 20)
+
+
