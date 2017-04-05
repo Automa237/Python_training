@@ -167,6 +167,44 @@ print(containsOnly(a,b))
 
 
 # 文字列の置換
+"""
 a = "I like orange."
 ReplacedStr = a.replace("orange","apple")
 print(ReplacedStr)
+"""
+# >> I like apple.
+
+# 文字列を大文字にしたり小文字にしたりする
+string = "abc"
+"""
+big = string.upper( )
+print(big)
+"""
+# >> ABC
+"""
+string = "ABC"
+small = string.lower( )
+print(small)
+"""
+# >> abc
+# 最初の文字だけを大文字に、ほかは小文字にする
+"""
+a = "one two three"
+print(a.title( ))
+"""
+# >> One two three
+# それぞれの単語の最初の文字だけを大文字にする
+"""
+a = "one two three"
+print(a.title( ))
+"""
+# >> One Two Three
+
+# 文字列の一部にアクセスする
+"""
+theline = "abcdefghijklmn"
+string = theline[3:8]
+print(string)
+"""
+# >> defgh
+
