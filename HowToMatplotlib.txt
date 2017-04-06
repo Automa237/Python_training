@@ -1,0 +1,18 @@
+# coding: utf-8
+
+# matplotlibの使い方
+
+# 方程式を設定するためにNumpyをインポート
+import numpy as np
+# matplotlibのpyplotをインポート
+import matplotlib.pyplot as plt
+# x軸の領域とと精度を設定し、x値を用意
+x = np.arange(10)
+
+# arange関数
+# arange([start],stop,[step],[dtype]) ※start, step, dtypeは省略可能
+
+## 線形図
+plt.plot(x, y_sin, marker="o", markersize=5, label="line")
+# グラフ表示
+plt.show()
